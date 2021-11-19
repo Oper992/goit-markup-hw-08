@@ -1,0 +1,35 @@
+.hero {
+    background-color: var(--footer-and-banner-background-color);
+    padding: 200px 0 200px 0;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .hero__titel {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .hero__button {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    font-weight: bold;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
