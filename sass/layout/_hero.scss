@@ -1,35 +1,98 @@
 .hero {
-    background-color: var(--footer-and-banner-background-color);
-    padding: 200px 0 200px 0;
-    text-align: center;
+  background-color: var(--footer-and-banner-background-color);
+  padding: 118px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/Hero480@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 480px;
+  height: 400px;
+  background-size: 480px 400px;
+  margin: 0 auto;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/banner.jpg);
-    background-repeat: no-repeat;
-    width: 1600px;
-    margin: 0 auto;
+      url(/images/Hero480@2x.jpg);
   }
-  .hero__titel {
-    color: var(--white-color);
-    font-weight: 900;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Hero768@1x.jpg);
+    width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/Hero768@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Hero1200@1x.jpg);
+    width: 1600px;
+    height: 600px;
+    background-size: 1600px 600px;
+    padding: 200px 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/Hero1200@2x.jpg);
+    }
+  }
+}
+.hero__titel {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
   }
-  .hero__button {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-    font-weight: bold;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    padding: 10px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+}
+
+.hero__button {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
