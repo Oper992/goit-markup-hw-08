@@ -1,9 +1,5 @@
 .team {
   background-color: var(--gray-background-color);
-
-  @media screen and (min-width: 1200px) {
-    width: 1600px;
-  }
 }
 .team__title {
   font-weight: 500;

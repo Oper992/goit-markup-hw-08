@@ -3,17 +3,13 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ececec;
-
-  @media screen and (min-width: 1200px){
-    width: 1600px;
-  }
 }
 .header__container {
   display: flex;
   align-items: center;
 }
 .logo--header {
-  margin-right: 93px;
+  margin-right: auto;
   padding: 24px 0 25px 0;
   color: var(--black-text-color);
 

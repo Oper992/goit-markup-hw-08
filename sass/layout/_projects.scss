@@ -1,8 +1,12 @@
 .portfolio-cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin: 0 auto;
+  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 .portfolio-cards-link {
   color: var(--black-text-color);

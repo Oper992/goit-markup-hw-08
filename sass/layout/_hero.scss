@@ -1,5 +1,4 @@
 .hero {
-  background-color: var(--footer-and-banner-background-color);
   padding: 118px 0;
   text-align: center;
   background-image: linear-gradient(
@@ -12,6 +11,7 @@
   width: 480px;
   height: 400px;
   background-size: 480px 400px;
+  background-position: center;
   margin: 0 auto;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -51,7 +51,8 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(/images/Hero1200@1x.jpg);
-    width: 1600px;
+
+    width: auto;
     height: 600px;
     background-size: 1600px 600px;
     padding: 200px 0;
