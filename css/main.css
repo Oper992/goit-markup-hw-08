@@ -417,6 +417,7 @@ a {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ececec;
+  min-width: 480px;
 }
 
 .header__container {
@@ -956,6 +957,7 @@ a {
 .footer {
   background-color: var(--footer-and-banner-background-color);
   padding: 60px 0;
+  min-width: 480px;
 }
 
 .footer__container {

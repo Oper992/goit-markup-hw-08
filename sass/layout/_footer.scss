@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--footer-and-banner-background-color);
   padding: 60px 0;
+  min-width: 480px;
 }
 .footer__container {
   display: flex;
