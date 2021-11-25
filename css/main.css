@@ -1095,6 +1095,8 @@ a {
 
 .team {
   background-color: var(--gray-background-color);
+  min-width: 480px;
+  margin: 0 auto;
 }
 
 .team__title {
