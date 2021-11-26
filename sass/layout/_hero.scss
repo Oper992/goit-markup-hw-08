@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/Hero480@1x.jpg);
+    url(../images/Hero480@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 480px;
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/Hero480@2x.jpg);
+      url(../images/Hero480@2x.jpg);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
