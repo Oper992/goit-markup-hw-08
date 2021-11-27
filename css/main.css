@@ -143,7 +143,8 @@ a {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
   background-color: inherit;
@@ -423,7 +424,6 @@ a {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ececec;
-  min-width: 480px;
 }
 
 .header__container {
@@ -911,6 +911,7 @@ a {
 .clients {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -924,7 +925,13 @@ a {
   height: 92px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item:nth-child(-n + 4) {
     margin-bottom: 30px;
   }
@@ -981,7 +988,6 @@ a {
 .footer {
   background-color: var(--footer-and-banner-background-color);
   padding: 60px 0;
-  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
