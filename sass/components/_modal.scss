@@ -114,6 +114,8 @@
 .modal__checkbox:checked + .modal__label-checkbox::before {
   border: none;
   background-image: url(../images/checkbox-check.svg);
+  background-position: center;
+ 
 }
 .modal__agreement {
   color: var(--blue-color);
@@ -130,7 +132,7 @@
   &::before {
     display: block;
     content: "";
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     border: 2px solid var(--black-text-color);
     border-radius: 2px;
