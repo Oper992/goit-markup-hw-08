@@ -8,7 +8,8 @@
     url(../images/Hero480@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 480px;
+  width: 100%;
+  min-width: 480px;
   height: 400px;
   background-size: 480px 400px;
   background-position: center;
@@ -24,13 +25,14 @@
       ),
       url(../images/Hero480@2x.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/Hero768@1x.jpg);
-    width: 768px;
+      url(../images/Hero768@1x.jpg);
+    width: 100%;
+    max-width: 768px;
     height: 400px;
     background-size: 768px 400px;
 
@@ -42,15 +44,15 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/Hero768@2x.jpg);
+        url(../images/Hero768@2x.jpg);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px){
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/Hero1200@1x.jpg);
+      url(../images/Hero1200@1x.jpg);
 
     width: auto;
     height: 600px;
@@ -65,7 +67,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/Hero1200@2x.jpg);
+        url(../images/Hero1200@2x.jpg);
     }
   }
 }
