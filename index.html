@@ -72,13 +72,17 @@
           </li>
         </ul>
         <!-----------MOBILE version------------->
-        <button class="burger-btn js-open-menu" aria-expanded="false" aria-controls="modal">
+        <button
+          class="burger-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="burger-btn__icon" width="40px" height="40px">
             <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button type="button" class="mobile-menu__btn-close js-close-menu">
           <svg class="mobile-menu__icon-close" width="40px" height="40px">
             <use href="./images/symbol-defs.svg#icon-close_40px"></use>
@@ -247,7 +251,7 @@
                     ./images/team/team_member1-480@2x.webp 900w
                   "
                   media="(max-width: 767px)"
-                  sizes="450px, 100vw"
+                  sizes="(min-width: 450px) 450px, 100vw"
                   type="image/webp"
                 />
                 <source
@@ -256,7 +260,7 @@
                     ./images/team/team_member1-768@2x.webp 708w
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="354px, 100vw"
+                  sizes="(min-width: 354px) 354px, 100vw"
                   type="image/webp"
                 />
                 <source
@@ -265,7 +269,7 @@
                     ./images/team/team_member1-1200@2x.webp 540w
                   "
                   media="(min-width: 1200px)"
-                  sizes="270px, 100vw"
+                  sizes="(min-width: 270px) 270px, 100vw"
                   type="image/webp"
                 />
                 <img
@@ -336,17 +340,17 @@
                     ./images/team/team_member2-480@2x.webp 900w
                   "
                   media="(max-width: 767px)"
-                  sizes="480px, 100vw"
+                  sizes="(min-width: 450px) 450px, 100vw"
                   type="image/webp"
                 />
                 <source
-                  <source
+                  
                   srcset="
                     ./images/team/team_member2-768@1x.webp 354w,
                     ./images/team/team_member2-768@2x.webp 708w
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="354px, 100vw"
+                  sizes="(min-width: 354px) 354px, 100vw"
                   type="image/webp"
                 />
                 <source
@@ -355,7 +359,7 @@
                     ./images/team/team_member2-1200@2x.webp 540w
                   "
                   media="(min-width: 1200px)"
-                  sizes="270px, 100vw"
+                  sizes="(min-width: 270px) 270px, 100vw"
                   type="image/webp"
                 />
                 <img
@@ -426,17 +430,17 @@
                     ./images/team/team_member3-480@2x.webp 900w
                   "
                   media="(max-width: 767px)"
-                  sizes="480px, 100vw"
+                  sizes="(min-width: 450px) 450px, 100vw"
                   type="image/webp"
                 />
                 <source
-                  <source
+                  
                   srcset="
                     ./images/team/team_member3-768@1x.webp 354w,
                     ./images/team/team_member3-768@2x.webp 708w
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="354px, 100vw"
+                  sizes="(min-width: 354px) 354px, 100vw"
                   type="image/webp"
                 />
                 <source
@@ -445,7 +449,7 @@
                     ./images/team/team_member3-1200@2x.webp 540w
                   "
                   media="(min-width: 1200px)"
-                  sizes="270px, 100vw"
+                  sizes="(min-width: 270px) 270px, 100vw"
                   type="image/webp"
                 />
                 <img
@@ -516,17 +520,17 @@
                     ./images/team/team_member4-480@2x.webp 900w
                   "
                   media="(max-width: 767px)"
-                  sizes="480px, 100vw"
+                  sizes="(min-width: 450px) 450px, 100vw"
                   type="image/webp"
                 />
                 <source
-                  <source
+                  
                   srcset="
                     ./images/team/team_member4-768@1x.webp 354w,
                     ./images/team/team_member4-768@2x.webp 708w
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="354px, 100vw"
+                  sizes="(min-width: 354px) 354px, 100vw"
                   type="image/webp"
                 />
                 <source
@@ -535,7 +539,7 @@
                     ./images/team/team_member4-1200@2x.webp 540w
                   "
                   media="(min-width: 1200px)"
-                  sizes="270px, 100vw"
+                  sizes="(min-width: 270px) 270px, 100vw"
                   type="image/webp"
                 />
                 <img
