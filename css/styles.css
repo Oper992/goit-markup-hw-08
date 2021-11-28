@@ -630,9 +630,11 @@ header {
   border:none;
   background-image: url(../images/checkbox-check.svg);
 }
-.modal__agreement {
-  color: var(--blue-color);
+.modal-agreement {
   margin-left: 4px;
+}
+.modal-agreement__link{
+color: var(--blue-color);
 }
 .modal__label-checkbox {
   display: flex;

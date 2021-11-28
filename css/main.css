@@ -220,7 +220,7 @@ a {
   height: 100%;
   background-color: var(--backdrop-background-color);
   position: fixed;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -239,7 +239,6 @@ a {
 }
 
 .modal {
-  width: 450px;
   min-height: 609px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -367,9 +366,13 @@ a {
   background-position: center;
 }
 
-.modal__agreement {
-  color: var(--blue-color);
+.modal-agreement {
+  color: inherit;
   margin-left: 4px;
+}
+
+.modal-agreement__link {
+  color: var(--blue-color);
 }
 
 .modal__label-checkbox {
@@ -382,7 +385,6 @@ a {
 }
 
 .modal__label-checkbox::before {
-  display: block;
   content: "";
   min-width: 16px;
   height: 15px;
@@ -419,6 +421,10 @@ a {
 
 .modal__submit:hover, .modal__submit:focus {
   background-color: var(--modal__submit-color);
+}
+
+.modal__submit .dd {
+  display: flex;
 }
 
 .header {
@@ -755,7 +761,6 @@ a {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero768@1x.jpg);
     width: 100%;
-    height: 400px;
     background-size: 768px 400px;
   }
 }
@@ -769,7 +774,7 @@ a {
 @media screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero1200@1x.jpg);
-    width: auto;
+    width: 100%;
     height: 600px;
     background-size: 1600px 600px;
     padding: 200px 0;
@@ -1275,7 +1280,9 @@ a {
 .portfolio-cards-link {
   color: var(--black-text-color);
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-cards-link:hover, .portfolio-cards-link:focus {
@@ -1326,6 +1333,7 @@ a {
 
 .portfolio-cards-description {
   padding: 20px 24px;
+  flex-grow: 1;
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
   border-right: 1px solid var(--portfolio-border-color);

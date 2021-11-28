@@ -31,7 +31,6 @@
       ),
       url(../images/Hero768@1x.jpg);
     width: 100%;
-    height: 400px;
     background-size: 768px 400px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -52,7 +51,7 @@
       ),
       url(../images/Hero1200@1x.jpg);
 
-    width: auto;
+    width: 100%;
     height: 600px;
     background-size: 1600px 600px;
     padding: 200px 0;

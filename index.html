@@ -344,7 +344,6 @@
                   type="image/webp"
                 />
                 <source
-                  
                   srcset="
                     ./images/team/team_member2-768@1x.webp 354w,
                     ./images/team/team_member2-768@2x.webp 708w
@@ -434,7 +433,6 @@
                   type="image/webp"
                 />
                 <source
-                  
                   srcset="
                     ./images/team/team_member3-768@1x.webp 354w,
                     ./images/team/team_member3-768@2x.webp 708w
@@ -524,7 +522,6 @@
                   type="image/webp"
                 />
                 <source
-                  
                   srcset="
                     ./images/team/team_member4-768@1x.webp 354w,
                     ./images/team/team_member4-768@2x.webp 708w
@@ -804,17 +801,19 @@
                 placeholder="Введите текст"
               ></textarea>
             </label>
-            <input
-              class="modal__checkbox visually-hidden"
-              type="checkbox"
-              id="checkbox"
-              value="modal__agreement"
-              required
-            />
-            <label for="checkbox" class="modal__label-checkbox">
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="modal__agreement">Условия договора</a>
-            </label>
+            <span class="dd">
+              <input
+                class="modal__checkbox visually-hidden"
+                type="checkbox"
+                id="checkbox"
+                value="modal__agreement"
+                required
+              />
+              <label for="checkbox" class="modal__label-checkbox">
+
+                <a href="#" class="modal-agreement">Соглашаюсь с рассылкой и принимаю <span class="modal-agreement__link">Условия договора</span> </a>
+              </label>
+            </span>
             <button class="modal__submit" type="submit">Отправить</button>
           </div>
         </form>

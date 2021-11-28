@@ -1,5 +1,5 @@
+
 .modal {
-  width: 450px;
   min-height: 609px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -115,11 +115,13 @@
   border: none;
   background-image: url(../images/checkbox-check.svg);
   background-position: center;
- 
 }
-.modal__agreement {
-  color: var(--blue-color);
+.modal-agreement {
+  color: inherit;
   margin-left: 4px;
+}
+.modal-agreement__link{
+  color: var(--blue-color);
 }
 .modal__label-checkbox {
   display: flex;
@@ -130,7 +132,6 @@
   margin-bottom: 30px;
 
   &::before {
-    display: block;
     content: "";
     min-width: 16px;
     height: 15px;
@@ -165,5 +166,8 @@
   &:hover,
   &:focus {
     background-color: var(--modal__submit-color);
+  }
+  .dd{
+    display: flex;
   }
 }
